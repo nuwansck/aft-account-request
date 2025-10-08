@@ -23,5 +23,5 @@ module "sandbox" {
     group = "prod"
   }
 
-  account_customizations_name = "sandbox"
+  account_customizations_name = "LZ-Shared"
 }
