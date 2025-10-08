@@ -2,16 +2,16 @@ module "sandbox" {
   source = "./modules/aft-account-request"
 
   control_tower_parameters = {
-    AccountEmail              = "lz-shared@vmgeeks.com"
-    AccountName               = "LZ-Shared"
+    AccountEmail              = "lz-prod@vmgeeks.com"
+    AccountName               = "LZ-Prod"
     ManagedOrganizationalUnit = "Infrastructure"
-    SSOUserEmail              = "lz-shared@vmgeeks.com"
+    SSOUserEmail              = "lz-prod@vmgeeks.com"
     SSOUserFirstName          = "LZ"
-    SSOUserLastName           = "Shared"
+    SSOUserLastName           = "Prod"
   }
 
   account_tags = {
-    "Environment" = "Shared"
+    "Environment" = "Prod"
   }
 
   change_management_parameters = {
@@ -23,5 +23,5 @@ module "sandbox" {
     group = "prod"
   }
 
-  account_customizations_name = "LZ-Shared"
+  account_customizations_name = "LZ-Prod"
 }
